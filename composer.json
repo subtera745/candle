@@ -67,7 +67,15 @@
         "drupal/lightgallery": "^1.0",
         "drupal/social_media_links": "^2.6",
         "drupal/smtp": "^1.0@beta",
-        "drupal/webform": "^5.0@RC"       
+        "drupal/webform": "^5.0@RC",
+        "drupal/linked_field": "^1.1",
+        "drupal/search_api": "^1.7",
+        "drupal/facets": "^1.0@beta",
+        "drupal/taxonomy_facets": "^1.0@RC",
+        "drupal/commerce": "^2.5",
+        "drupal/shs": "^1.0@alpha",
+        "drupal/chosen": "^2.5",
+        "drupal/elasticsearch_connector": "^5.0@alpha"       
     },
     "require-dev": {
         "behat/mink": "~1.7",

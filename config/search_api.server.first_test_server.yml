@@ -1,0 +1,17 @@
+uuid: b966e7b4-fc07-4062-be92-1dc8f439d5ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: first_test_server
+name: 'First Test Server'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  partial_matches: false
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true
