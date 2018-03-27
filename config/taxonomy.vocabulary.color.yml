@@ -1,0 +1,9 @@
+uuid: 36168000-9ed3-478f-9e30-37f60e2744bb
+langcode: en
+status: true
+dependencies: {  }
+name: Color
+vid: color
+description: 'Candle Color'
+hierarchy: 0
+weight: 0

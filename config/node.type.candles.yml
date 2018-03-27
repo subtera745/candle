@@ -1,0 +1,18 @@
+uuid: dd5aa5f2-e946-42b5-a91a-75bc5d920f2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Candles
+type: candles
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

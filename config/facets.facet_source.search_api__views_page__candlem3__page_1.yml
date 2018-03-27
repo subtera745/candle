@@ -1,0 +1,9 @@
+uuid: c2e86d0d-540c-4a9d-8493-2d03e9799c4c
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__candlem3__page_1
+name: 'search_api:views_page__candlem3__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

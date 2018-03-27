@@ -1,0 +1,28 @@
+uuid: ff3b10b3-89f6-40d3-ad11-f20fa723f012
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.sense
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: sense
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:sense'
+settings:
+  id: 'facet_block:sense'
+  label: Sense
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /candles
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: eb81ed9b-52a0-4a9b-b1ef-4212df648db4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.colorm2
+  module:
+    - facets
+  theme:
+    - bartik
+id: colorm2
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:colorm2'
+settings:
+  id: 'facet_block:colorm2'
+  label: ColorM2
+  provider: facets
+  label_display: visible
+visibility: {  }

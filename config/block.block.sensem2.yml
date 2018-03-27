@@ -1,0 +1,22 @@
+uuid: c13b24aa-f8e2-4061-b6b1-3bf3ed032615
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sensem2
+  module:
+    - facets
+  theme:
+    - bartik
+id: sensem2
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:sensem2'
+settings:
+  id: 'facet_block:sensem2'
+  label: SenseM2
+  provider: facets
+  label_display: visible
+visibility: {  }

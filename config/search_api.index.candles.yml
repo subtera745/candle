@@ -1,0 +1,90 @@
+uuid: 3d206f7a-90cf-4e4f-94e1-ac8a883eeb35
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_color
+    - field.storage.node.field_sense
+    - search_api.server.first_test_server
+  module:
+    - search_api
+    - node
+    - taxonomy
+id: candles
+name: Candles
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_color:
+    label: Color
+    datasource_id: 'entity:node'
+    property_path: field_color
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_color
+  field_sense:
+    label: Sense
+    datasource_id: 'entity:node'
+    property_path: field_sense
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_sense
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+  uid:
+    label: 'Authored by'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  name:
+    label: Name
+    datasource_id: 'entity:taxonomy_term'
+    property_path: name
+    type: string
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - candles
+    languages:
+      default: true
+      selected: {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: true
+      selected:
+        - '123'
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  rendered_item: {  }
+  add_url: {  }
+  aggregated_field: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: first_test_server

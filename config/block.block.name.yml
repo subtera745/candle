@@ -1,6 +1,6 @@
 uuid: 26b4984f-3f82-401e-8678-9f1c2651dc88
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.name
@@ -10,7 +10,7 @@ dependencies:
     - bartik
 id: name
 theme: bartik
-region: sidebar_second
+region: sidebar_first
 weight: -5
 provider: null
 plugin: 'facet_block:name'

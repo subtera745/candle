@@ -1,0 +1,29 @@
+uuid: 20c962ba-a2f6-4100-a4e0-aefd0dba8b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color
+    - node.type.candles
+    - taxonomy.vocabulary.color
+id: node.candles.field_color
+field_name: field_color
+entity_type: node
+bundle: candles
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      color: color
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

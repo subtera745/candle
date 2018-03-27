@@ -1,0 +1,29 @@
+uuid: 8dc373af-8630-46d1-9911-3196fd834beb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sense
+    - node.type.candles
+    - taxonomy.vocabulary.sense
+id: node.candles.field_sense
+field_name: field_sense
+entity_type: node
+bundle: candles
+label: Sense
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sense: sense
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

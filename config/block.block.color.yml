@@ -1,0 +1,28 @@
+uuid: 7ef2929d-3eac-4a54-8e99-ff5fe8f1faf1
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.color
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: color
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:color'
+settings:
+  id: 'facet_block:color'
+  label: Color
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /candles
+    negate: false
+    context_mapping: {  }

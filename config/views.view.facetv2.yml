@@ -1,14 +1,13 @@
-uuid: dadd752a-57c0-476a-a91a-f73806df7519
+uuid: b397d3cc-2df9-41df-9f61-2d917457dfee
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.first_index
-    - system.menu.main
   module:
     - search_api
-id: 1facet
-label: 1Facet
+id: facetv2
+label: facetv2
 module: views
 description: ''
 tag: ''
@@ -126,7 +125,7 @@ display:
             multi_separator: ', '
       filters: {  }
       sorts: {  }
-      title: 1Facet
+      title: facetv2
       header: {  }
       footer: {  }
       empty: {  }
@@ -146,47 +145,6 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      cache:
-        type: none
-      defaults:
-        cache: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-      tags: {  }
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
-    position: 2
-    display_options:
-      display_extenders: {  }
-      path: fullsend
-      menu:
-        type: normal
-        title: fullsend
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: main
-      style:
-        type: default
-        options: {  }
-      defaults:
-        style: false
-        row: false
-      row:
-        type: search_api
-        options:
-          view_modes:
-            'entity:node':
-              test1: default
-            'entity:taxonomy_term':
-              123: ''
     cache_metadata:
       max-age: -1
       contexts:

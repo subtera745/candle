@@ -1,0 +1,30 @@
+uuid: 4c47c140-a761-4813-aebe-c788b04a9536
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.candles.field_color
+    - field.field.node.candles.field_image
+    - field.field.node.candles.field_sense
+    - node.type.candles
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.candles.teaser
+targetEntityType: node
+bundle: candles
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_color: true
+  field_image: true
+  field_sense: true
